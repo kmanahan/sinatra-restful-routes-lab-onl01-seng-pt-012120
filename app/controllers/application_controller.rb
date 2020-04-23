@@ -27,6 +27,7 @@ class ApplicationController < Sinatra::Base
     @recipe = Recipe.find_by_id(params[:id])
     erb :edit
   end 
+<<<<<<< HEAD
   
   patch '/recipes/:id' do
     @recipe = Recipe.find_by_id(params[:id])
@@ -39,4 +40,6 @@ class ApplicationController < Sinatra::Base
   @recipe.delete
   redirect to '/recipes'
   end
+=======
+>>>>>>> 852a3cd66abeeae33c88d8bef750a1b2f97f72ca
 end
